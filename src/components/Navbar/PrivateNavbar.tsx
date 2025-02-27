@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { IoLogOutOutline } from "react-icons/io5";
 import { SiAuthy } from "react-icons/si";
 import { logoutAction } from "../../redux/slice/authSlice";
+import {FaRegMoneyBillAlt} from "react-icons/fa";
 
 function classNames(...classes: string[]) {
     return classes.filter(Boolean).join(" ");
@@ -37,14 +38,14 @@ const PrivateNavbar: React.FC = () => {
                                     </Disclosure.Button>
                                 </div>
                                 <div className="flex flex-shrink-0 items-center">
-                                    <SiAuthy className="h-8 w-auto text-green-500" />
+                                    <FaRegMoneyBillAlt className="h-8 w-auto text-blue-500" />
                                 </div>
                                 <div className="hidden md:ml-6 md:flex md:space-x-8">
                                     <Link
                                         to="/"
                                         className="inline-flex items-center border-b-2 border-indigo-500 px-1 pt-1 text-sm font-medium text-gray-900"
                                     >
-                                        MasyncTracker
+                                        PennyPatrol
                                     </Link>
                                 </div>
                                 <div className="hidden md:ml-6 md:flex md:space-x-8">

@@ -15,9 +15,21 @@ const HeroSection: React.FC = () => {
         <>
             <div className="bg-gradient-to-r from-navy-800 to-navy-800 text-white py-20 px-4">
                 <div className="max-w-7xl mx-auto flex flex-col items-center">
+                    <img
+                        src="src/assets/business (1).png"  // Update with the correct path
+                        alt="Sticker"
+                        className="absolute top-4 right-4 w-20 h-20 scale-125 opacity-90"
+                    />
+
+                    <img
+                        src="src/assets/business%20(2).png"  // Update with the correct path
+                        alt="Sticker"
+                        className="absolute bottom-4 left-4 w-20 h-20 scale-125 opacity-90"
+                    />
+
                     {/* Heading */}
                     <h1 className="text-5xl font-bold text-center">
-                        Track Your Expenses Effortlessly
+                        Track Your Expenses Effortlessly 🚀
                     </h1>
 
                     {/* Subheading */}
@@ -28,23 +40,24 @@ const HeroSection: React.FC = () => {
                     {/* Feature Icons */}
                     <div className="flex space-x-8 mt-10">
                         <div className="flex flex-col items-center">
-                            <GiReceiveMoney className="text-4xl" />
+                            <GiReceiveMoney className="text-4xl"/>
                             <p className="mt-2">Seamless Tracking</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <IoFilterCircleOutline className="text-4xl"  />
+                            <IoFilterCircleOutline className="text-4xl"/>
                             <p className="mt-2">Expense Sorting</p>
                         </div>
                         <div className="flex flex-col items-center">
-                            <TbReport className="text-4xl" />
+                            <TbReport className="text-4xl"/>
                             <p className="mt-2"> Financial Overview</p>
                         </div>
                     </div>
 
                     {/* Call to Action Button */}
                     <Link to="/register">
-                        <button className="mt-8 px-6 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 transition duration-300">
-                            Get Started
+                        <button
+                            className="mt-8 px-6 py-3 bg-teal-500 text-white font-semibold rounded-lg shadow-md hover:bg-teal-600 transition duration-300">
+                            Get Started 🪙
                         </button>
                     </Link>
                 </div>
@@ -58,7 +71,7 @@ const HeroSection: React.FC = () => {
                     {/* Step 1 */}
                     <div className="flex flex-col items-center text-center">
                         <div className="p-4 rounded-full bg-navy-800 text-white mb-4">
-                            <BsPersonAdd className="text-xl" />
+                            <BsPersonAdd className="text-xl"/>
                         </div>
                         <h3 className="mb-2 font-semibold">Sign Up</h3>
                         <p>Register and start managing your expenses in a minute.</p>
@@ -66,7 +79,7 @@ const HeroSection: React.FC = () => {
                     {/* Step 2 */}
                     <div className="flex flex-col items-center text-center">
                         <div className="p-4 rounded-full bg-navy-800 text-white mb-4">
-                             <FaMoneyCheckAlt className="text-xl"/>
+                            <FaMoneyCheckAlt className="text-xl"/>
                         </div>
                         <h3 className="mb-2 font-semibold">Add Transactions</h3>
                         <p>Quickly add income and expenses to your account.</p>
@@ -74,7 +87,7 @@ const HeroSection: React.FC = () => {
                     {/* Step 3 */}
                     <div className="flex flex-col items-center text-center">
                         <div className="p-4 rounded-full bg-navy-800 text-white mb-4">
-                            <BsGraphUpArrow  className="text-xl"/>
+                            <BsGraphUpArrow className="text-xl"/>
                         </div>
                         <h3 className="mb-2 font-semibold">View Reports</h3>
                         <p>See insightful reports & graphs of your finances.</p>
@@ -88,7 +101,7 @@ const HeroSection: React.FC = () => {
                 </h2>
                 <div className="mt-10 max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <FaQuoteLeft className="text-xl text-gray-400" />
+                        <FaQuoteLeft className="text-xl text-gray-400"/>
                         <p className="mt-4">
                             "This app has revolutionized the way I track my expenses. Highly
                             intuitive and user-friendly."
@@ -96,7 +109,7 @@ const HeroSection: React.FC = () => {
                         <p className="mt-4 font-bold">- Jane Doe</p>
                     </div>
                     <div className="bg-white p-6 rounded-lg shadow-lg">
-                        <FaQuoteLeft className="text-xl text-gray-400" />
+                        <FaQuoteLeft className="text-xl text-gray-400"/>
                         <p className="mt-4">
                             "Finally, a hassle-free way to manage my finances. The insights
                             feature is a game changer!"
@@ -104,23 +117,32 @@ const HeroSection: React.FC = () => {
                         <p className="mt-4 font-bold">- John Smith</p>
                     </div>
                 </div>
+
             </div>
             {/* CTA */}
-            <div className="bg-navy-800 text-white py-20 px-4">
-                <div className="max-w-4xl mx-auto text-center">
+            <div className="relative bg-navy-800 text-white py-20 px-4 overflow-hidden">
+                {/* Patterned Background */}
+                <div
+                    className="absolute inset-0 opacity-10 bg-cover bg-center"
+                    style={{backgroundImage: "url('src/assets/confetti-doodles.png')"}}
+                ></div>
+
+                <div className="max-w-4xl mx-auto text-center relative z-10">
                     <h2 className="text-3xl font-bold">
-                        Ready to Take Control of Your Finances?
+                        Ready to Take Control of Your Finances? 💰
                     </h2>
                     <p className="mt-4">
                         Join us now and start managing your expenses like a pro!
                     </p>
                     <Link to="/register">
-                        <button className="mt-8 px-6 py-3 bg-white text-navy-800 font-semibold rounded-lg shadow-md hover:bg-gray-100 transition duration-300">
-                            Sign Up For Free
+                        <button
+                            className="mt-8 px-6 py-3 bg-white text-navy-800 font-semibold rounded-lg shadow-md hover:bg-gray-200 transition duration-300">
+                            🚀 Sign Up For Free
                         </button>
                     </Link>
                 </div>
             </div>
+
         </>
     );
 };

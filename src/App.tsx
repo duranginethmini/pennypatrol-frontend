@@ -13,6 +13,7 @@ import Dashboard from "./components/Users/Dashboard";
 import UserProfile from "./components/Users/UserProfile";
 import AuthRoute from "./components/Auth/AuthRoute";
 import { RootState } from "./redux/store/store"; // Ensure you have the correct type
+import TransactionsList from "./components/Transactions/TransactionList.tsx";
 
 function App() {
     // Type the user state properly
@@ -55,6 +56,14 @@ function App() {
                     element={
                         <AuthRoute>
                             <TransactionForm />
+                        </AuthRoute>
+                    }
+                />
+                <Route
+                    path="/transactions"
+                    element={
+                        <AuthRoute>
+                            <TransactionsList /> {/* Ensure this component exists */}
                         </AuthRoute>
                     }
                 />
